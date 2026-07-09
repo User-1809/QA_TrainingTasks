@@ -89,9 +89,9 @@ public class MtsTestsPO {
     @Test
     public void testMtsPaymentFlow() {
         Assertions.assertTrue(mainPage.getBlockTitle().equalsIgnoreCase("Онлайн пополнение без комиссии"));
-        Assertions.assertTrue(mainPage.isVisaLogoDisplayed(), "Логотип Visa не отображается!");
-        Assertions.assertTrue(mainPage.isMastercardLogoDisplayed(), "Логотип Mastercard не отображается!");
-        Assertions.assertTrue(mainPage.isBelkartLogoDisplayed(), "Логотип Белкарт не отображается!");
+        Assertions.assertTrue(mainPage.isVisaLogoDisplayed(), "Логотип Visa не отображается");
+        Assertions.assertTrue(mainPage.isMastercardLogoDisplayed(), "Логотип Mastercard не отображается");
+        Assertions.assertTrue(mainPage.isBelkartLogoDisplayed(), "Логотип Белкарт не отображается");
         Assertions.assertTrue(mainPage.getLinkHref().contains("help"));
 
         // проверка плейсхолдеров
