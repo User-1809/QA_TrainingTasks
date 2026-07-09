@@ -43,13 +43,13 @@ public class MtsTests {
         Assertions.assertEquals("онлайн пополнение без комиссии", title.toLowerCase(), "Неверное название блока!");
 
         WebElement visaLogo = driver.findElement(By.xpath("//div[@class='pay__partners']//img[contains(@alt, 'Visa')]"));
-        Assertions.assertTrue(visaLogo.isDisplayed(), "Логотип Visa не отображается!");
+        Assertions.assertTrue(visaLogo.isDisplayed(), "Логотип Visa не отображается");
 
         WebElement mastercardLogo = driver.findElement(By.xpath("//div[@class='pay__partners']//img[contains(@alt, 'Mastercard')]"));
-        Assertions.assertTrue(mastercardLogo.isDisplayed(), "Логотип Mastercard не отображается!");
+        Assertions.assertTrue(mastercardLogo.isDisplayed(), "Логотип Mastercard не отображается");
 
         WebElement belkartLogo = driver.findElement(By.xpath("//div[@class='pay__partners']//img[contains(@alt, 'Белкарт')]"));
-        Assertions.assertTrue(belkartLogo.isDisplayed(), "Логотип Белкарт не отображается!");
+        Assertions.assertTrue(belkartLogo.isDisplayed(), "Логотип Белкарт не отображается");
 
         WebElement linkElement = driver.findElement(By.xpath("//div[@class='pay__wrapper']//a[contains(text(), 'Подробнее о сервисе')]"));
         String href = linkElement.getAttribute("href");
